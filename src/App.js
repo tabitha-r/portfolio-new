@@ -1,56 +1,48 @@
 import React from 'react';
-import logo from './logo.svg';
-import { Counter } from './features/counter/Counter';
 import './App.css';
+import { Outlet } from 'react-router-dom';
+import { NavBar } from './components/navigation/navBar';
+import { BrowserHeader } from './components/header/header';
+import { Global, css } from '@emotion/react';
+import { useSelector } from 'react-redux';
+import { selectDarkMode } from './store/darkModeSlice';
 
 function App() {
+  const darkMode = useSelector(selectDarkMode);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <Counter />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <span>
-          <span>Learn </span>
-          <a
-            className="App-link"
-            href="https://reactjs.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            React
-          </a>
-          <span>, </span>
-          <a
-            className="App-link"
-            href="https://redux.js.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Redux
-          </a>
-          <span>, </span>
-          <a
-            className="App-link"
-            href="https://redux-toolkit.js.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Redux Toolkit
-          </a>
-          ,<span> and </span>
-          <a
-            className="App-link"
-            href="https://react-redux.js.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            React Redux
-          </a>
-        </span>
-      </header>
+      <Global 
+        styles={css`
+          :root {
+            --svgbrightness: ${darkMode.darkMode ? '15%' : '85%'};
+            --bgdarkest: ${darkMode.darkMode ? '#1f1f1f' : '#f4f4f4'};
+            --bgdark: ${darkMode.darkMode ? '#222222' : '#f9f9f9'};
+            --bglight:  ${darkMode.darkMode ? '#252525' : '#fcfcfc'};
+            --biglighest:  ${darkMode.darkMode ? '#282828' : '#ffffff'};
+            --mainlight: ${darkMode.darkMpde ? '#f8f8f8' : '#c1c1c1'};
+            --mainmedlight: ${darkMode.darkMpde ? '#cecece' : '#989898'};
+            --mainmed: ${darkMode.darkMpde ? '#a3a3a3' : '#707070'};
+            --mainmeddark: ${darkMode.darkMpde ? '#797979' : '#474747'};
+            --maindark: ${darkMode.darkMpde ? '#4e4e4e' : '#1f1f1f'};
+            --browserdark: ${darkMode.darkMode ? '#111111' : '#bababa'};
+            --browsermeddark: ${darkMode.darkMode ? '#222222' : '#c8c8c8'};
+            --browsermed: ${darkMode.darkMode ? '#353535' : '#d3d3d3'};
+            --browsermedlight: ${darkMode.darkMode ? '#404040' : '#dedede'};
+            --browserlight: ${darkMode.darkMode ? '#565656' : '#e9e9e9'};
+            --fontprimary: ${darkMode.darkMode ? '#fff' : '#1f1f1f'};
+            --fontsecondary: ${darkMode.darkMode ? '#bababa' : '#565656'};
+          }
+        `}
+      />
+      <div className="Monitor">
+        <div className="Screen">
+          <NavBar />
+          <BrowserHeader />
+          <Outlet />       
+      </div>
+      </div>
+      <div className="Stand"></div>
     </div>
   );
 }

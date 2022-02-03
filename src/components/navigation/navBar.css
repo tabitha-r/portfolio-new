@@ -1,0 +1,89 @@
+.browserTabs {
+    width: 100%;
+    background-color: var(--browserdark);
+    height: 35px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 0px;
+}
+
+.browserButton {
+    padding: 5px;
+}
+
+.greenCircle {
+    color: #00cc6a;
+}
+
+.yellowCircle {
+    color: #ffb900;
+}
+
+.redCircle {
+    color: #e81123;
+}
+
+nav {
+    text-align: left;
+    flex-grow: 30;
+}
+
+.browserButtons {
+    justify-self: flex-end;
+    flex-grow: 1;
+}
+
+.navTab {
+    justify-self: flex-start;
+    padding: 3px 20px 4px 20px;
+    margin: 1px 1px 0px 1px;
+    background-color: var(--browsermed);
+    border-radius: 5px 5px 0px 0px;
+    transition: .2s ease-in-out;
+    color: var(--fontprimary);
+}
+
+.navTab:hover {
+    background-color: var(--browserlight);
+}
+
+.activeTab {
+    background-color: var(--browserlight);
+}
+
+.browserLogo {
+    height: 75%;
+    width: auto;
+    filter: invert(99%) sepia(7%) saturate(19%) hue-rotate(247deg) brightness(var(--svgbrightness)) contrast(92%);
+    padding: 5px;
+    flex-grow: 1;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2rem;
+}
+
+@media screen and (max-width: 750px) {
+    .browserButton {
+        display: none;
+    }
+
+    .browserLogo {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .browserTabs {
+        overflow-x: scroll;
+        height: 5vh;
+        align-items: flex-end;
+    }
+
+    .navTab {
+        padding: 3px 20px 4px 20px;
+        margin: 1px 1px 0px 1px;
+    }
+}

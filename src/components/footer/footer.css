@@ -1,0 +1,45 @@
+/* Global Footer Settings */
+footer {
+    margin-bottom: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    bottom: 0px;
+}
+
+footer p, 
+footer a {
+    font-size: 1rem;
+    color: #fff;
+    transition: .2s ease-in-out;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+/* HomePage */
+.homePage footer {
+    background-color: #BF0426;
+}
+
+.homePage footer a:hover {
+    background-color: #fff;
+    color: #BF0426;
+}
+
+.homePage footer a:active {
+    background-color: #04ADBF;
+}
+
+/* About Page */
+.aboutPage footer {
+    background-color: #0f9ea8;
+}
+
+.aboutPage footer a:hover {
+    background-color: #bd9576;
+    color: #fff;
+}
+
+.aboutPage footer a:active {
+    background-color: #f0c5a5;
+}

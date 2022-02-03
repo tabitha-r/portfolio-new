@@ -1,0 +1,91 @@
+/* About Page */
+.aboutPage {
+    background-image: linear-gradient(0.45turn, #61b4b8, #0f9ea8);
+    margin: 0px;
+  }
+  
+  .aboutPage section {
+    background-color: #fff;
+    margin: 0px 32px 8px 32px;
+    box-shadow: 1px 3px 3px #666;
+    text-align: left;
+    padding: 0px;
+    border: none;
+    display: flex;
+    align-items: flex-end;
+    font-size: 1.1rem;
+    border-radius: 5px;
+  }
+  
+  .aboutPage .text {
+    padding: 16px 32px;
+    line-height: 1.6rem;
+    height: 100%;
+    align-self: flex-start;
+  }
+  
+  .aboutPage main h3,
+  .aboutPage .skillsTitle {
+    font-family: 'Slabo 13px', serif;
+    color: #fff;
+    letter-spacing: 0.6rem;
+    text-align: left;
+    padding: 5px auto 0px 60px;
+    margin: 32px auto 0px 48px;
+    font-size: 2.5rem;
+  }
+  
+  .photoContainer {
+    margin: 0px 0px 0px auto;
+    max-width: 45%;
+    min-width: 25%;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    border-radius: 0px 5px 5px 0px;
+  }
+  
+  .photoContainer img {
+    max-height: 500px;
+  }
+  
+  .aboutPage .fauxNav {
+    background-color: #fff;
+    padding: 2px 32px;
+    margin: 0px 0px 96px 0px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  
+  .aboutPage .fauxNav p {
+    padding: 0px 16px;
+    font-family: 'Flow Circular', sans-serif;
+    color: #bd9576;
+  }
+  
+  .aboutPage aside {
+    text-align: left;
+  }
+  
+  .aboutPage aside .instruction {
+    color: #fff;
+    padding: 0px 64px;
+    margin: 5px;
+  }
+  
+  .aboutFooter p {
+    font-family: 'Flow Circular', sans-serif;
+    color: #bd9576;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .blockedOut {
+    font-size: 24px;
+    margin: 0px;
+  }

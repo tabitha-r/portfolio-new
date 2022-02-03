@@ -1,39 +1,177 @@
+/* App Base */
 .App {
   text-align: center;
+  background-image: url('./images/matt-hoffman-Q0AM87PsYkE-unsplash.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 90vh;
+  min-width: 90vw;
+  padding: 10px 10px 0px 10px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.Monitor {
+  height: 90vh;
+  border: 30px solid #b7b7b7;
+  border-radius: 30px;
+  margin: 1px 1px 0px 1px;
+  box-shadow: 5px 5px 3px rgba(50, 50, 50, 0.4);
+  z-index: 10;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-float infinite 3s ease-in-out;
-  }
+.Screen {
+  border-top: 3px solid #808080;
+  border-left: 3px solid #808080;
+  border-bottom: 3px solid #e0e0e0;
+  border-right: 3px solid #e0e0e0;
+  height: 100%;
+  width: 100%;
+  background-color: white;
 }
 
-.App-header {
-  min-height: 100vh;
+.Stand{
+  background-image: linear-gradient(#6b6b6b, #b7b7b7);
+  width: 20%;
+  height: 23px;
+  margin: 0px auto;
+}
+
+.Logo {
+  width: 200px;
+  height: auto;
+}
+
+.page {
+  overflow: scroll;
+  z-index: 1;
+  width: 100%;
+  margin: 0px;
+  height: 90%;
+}
+
+h3 {
+  font-family: 'Slabo 13px', serif;
+}
+
+p {
+  font-family: 'Lato', sans-serif;
+}
+
+/* Home Page */
+.homePage p {
+  font-family: 'Lato', serif;
+  margin: 10px;
+}
+
+.homePage {
+  background-image: url('./images/ales-nesetril-Im7lZjxeLhg-unsplash.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.homePage .Logo {
+  filter: invert(100%) sepia(2%) saturate(2%) hue-rotate(297deg) brightness(105%) contrast(100%);
+  padding: 32px;
+  width: 20%;
+}
+
+.homePage h3 {
+  color: #999;
+  font-size: 5rem;
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+}
+
+.titleName {
+  font-weight: 600;
+  color: #fff;
+}
+
+.homeCta {
+  background-color: #fff;
+  border-top: 6px solid #D93D04;
+  padding: 8px 32px;
+  max-width: 25%;
+  margin: 0px 5% 4% auto;
+  border-radius: 0px 0px 50px 50px;
+  font-size: 1.2rem;
+}
+
+.homePage main {
   display: flex;
-  flex-direction: column;
+  align-items: top;
+}
+
+.homePage button {
+  background-color: #04ADBF;
+  color: #fff;
+  border: none;
+  padding: 10px 32px;
+  font-size: 1.2rem;
+  margin: 16px;
+  border-radius: 15px;
+  transition: all .1s ease-in-out;
+}
+
+.homePage button:hover {
+  background-color: #03808d;
+}
+
+.homePage button:active {
+  background-color: #03808d;
+  transform: translateY(1px);
+}
+
+.ctaIcon {
+  padding: 0px 5px;
+}
+
+
+
+/* Contact Page */
+.contactPage {
+  display: flex;
+  margin: 60px;
+  justify-content: space-evenly;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  padding: 65px 10px;
+  flex-wrap: wrap;
 }
 
-.App-link {
-  color: rgb(112, 76, 182);
+.contactInfo {
+  padding: 30px 0px;
+  background-color: #18BEF5;
+  border-radius: 25px;
+  color: #fff;
+  margin: 40px;
+  max-width: 400px;
 }
 
-@keyframes App-logo-float {
-  0% {
-    transform: translateY(0);
+.contactInfo .logo {
+  width: 20%;
+  height: 20%;
+  filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(332deg) brightness(108%) contrast(101%);
+}
+
+/* Media Queries */
+@media screen and (max-width: 600px) {
+  .Monitor {
+    border: none;
+    margin: 0px;
   }
-  50% {
-    transform: translateY(10px);
+
+  .Stand {
+    display: none;
   }
-  100% {
-    transform: translateY(0px);
+
+  .Screen {
+    margin: 0px;
+    border: none;
+  }
+
+  .App {
+    margin: 0px;
+    padding: 0px;
   }
 }
