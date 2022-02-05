@@ -16,15 +16,17 @@ function App() {
         styles={css`
           :root {
             --svgbrightness: ${darkMode.darkMode ? '15%' : '85%'};
-            --bgdarkest: ${darkMode.darkMode ? '#1f1f1f' : '#f4f4f4'};
+            --bgdarkest: ${darkMode.darkMode ? '#1f1f1f' : '#e9e9e9'};
             --bgdark: ${darkMode.darkMode ? '#222222' : '#f9f9f9'};
             --bglight:  ${darkMode.darkMode ? '#252525' : '#fcfcfc'};
-            --biglighest:  ${darkMode.darkMode ? '#282828' : '#ffffff'};
-            --mainlight: ${darkMode.darkMpde ? '#f8f8f8' : '#c1c1c1'};
-            --mainmedlight: ${darkMode.darkMpde ? '#cecece' : '#989898'};
-            --mainmed: ${darkMode.darkMpde ? '#a3a3a3' : '#707070'};
-            --mainmeddark: ${darkMode.darkMpde ? '#797979' : '#474747'};
-            --maindark: ${darkMode.darkMpde ? '#4e4e4e' : '#1f1f1f'};
+            --bglightest:  ${darkMode.darkMode ? '#282828' : '#fff'};
+            --mainlight: ${darkMode.darkMode ? '#565656' : '#f4f4f4'};
+            --mainmedlight: ${darkMode.darkMode ? '#4b4b4b' : '#e9e9e9'};
+            --mainmed: ${darkMode.darkMode ? '#404040' : '#dedede'};
+            --mainmeddark: ${darkMode.darkMode ? '#353535' : '#d3d3d3'};
+            --maindark: ${darkMode.darkMode ? '#2a2a2a' : '#c8c8c8'};
+            --contrastmain: ${darkMode.darkMode ? '#222' : '#7ba4aa'};
+            --contrastpink: ${darkMode.darkMode ? '#b57880' : '#693452'};
             --browserdark: ${darkMode.darkMode ? '#111111' : '#bababa'};
             --browsermeddark: ${darkMode.darkMode ? '#222222' : '#c8c8c8'};
             --browsermed: ${darkMode.darkMode ? '#353535' : '#d3d3d3'};
@@ -32,6 +34,8 @@ function App() {
             --browserlight: ${darkMode.darkMode ? '#565656' : '#e9e9e9'};
             --fontprimary: ${darkMode.darkMode ? '#fff' : '#1f1f1f'};
             --fontsecondary: ${darkMode.darkMode ? '#bababa' : '#565656'};
+            --fontcolor: ${darkMode.darkMode ? '#fff' : '#693452'};
+            --shadows: ${darkMode.darkMode ? '#121212' : '#b9b9b9'};
           }
         `}
       />

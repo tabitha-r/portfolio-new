@@ -1,0 +1,190 @@
+/* Home Page */
+/* Main Section */
+.homePage p {
+    font-family: 'Lato', serif;
+    margin: 10px;
+}
+
+.homePage h3 {
+    font-family: 'Lato', sans-serif;
+}
+  
+.homePage {
+    background-color: var(--bglightest);
+    color: var(--fontprimary);
+}
+  
+.homePage .Logo {
+    filter: invert(25%) sepia(56%) saturate(492%) hue-rotate(274deg) brightness(89%) contrast(91%);
+    padding: 32px;
+    width: 20%;
+    min-width: 150px;
+}
+  
+.homePage h2 {
+    font-size: 3rem;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    color: var(--fontsecondary);
+    text-align: left;
+}
+  
+.titleName {
+    font-size: 5rem;
+    font-weight: 600;
+    color: var(--fontprimary);
+}
+  
+.homePage main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: row nowrap;
+    transform: translateY(-21rem);
+    height: 0px;
+}
+
+.homePage section {
+    width: 100%;
+}
+
+.profileImg {
+    transform: translateY(1.9rem) translateX(-9rem);
+}
+
+/* TopBar */
+.homePage .topBar {
+    height: 3rem;
+    background-color: var(--contrastmain);
+    color: #fff;
+    margin: 0;
+    padding: 4px 1.5%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.identifyMenu {
+    font-size: 1.5rem;
+    align-self: flex-start;
+    padding-top: 6px;
+}
+
+/* Dividers */
+.topDivider {
+    height: 300px;
+    width: 100%;
+    background-image: url('../../images/layered-waves-haikei.svg');
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+    background-color: var(--contrastmain);
+}
+
+.bottomDivider {
+    background-color: var(--mainmed);
+    height: 310px;
+    width: 100%;
+    background-image: url('../../images/layered-waves-haikei2.svg');
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+}
+
+/* CTA Section */
+.ctaSection {
+    background-color: var(--contrastmain);
+    height: auto;
+    padding: 64px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+/* Services Section */
+.homePage .servicesSection {
+    background-color: #6f3857;
+    height: auto;
+}
+
+/* Portfolio Section */
+.homePage .portfolioSection {
+    background-color: var(--mainmed);
+    padding: 32px 0px;
+    height: auto;
+    text-align: left;
+}
+
+.portfolioSection h3 {
+    font-size: 3rem;
+    font-family: 'Lato', sans-serif;
+    margin: 0px 32px;
+    color: var(--fontcolor);
+}
+
+/* FAQ Section */
+.faqSection {
+    height: auto;
+    background-color: var(--mainlight);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Final CTA Section */
+.finalCta {
+    width: 100%;
+    height: 80%;
+    background-color: var(--contrastmain);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-flow: row wrap;
+}
+
+/* Footer */
+.homePage footer {
+    width: 100%;
+    height: 10%;
+    background-color: #323b58;
+}
+
+/* Media Queries */
+@media screen and (max-width: 1250px) {
+    .homePage main img {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .homePage .topBar {
+        display: none;
+    }
+
+    .homePage main {
+        flex-flow: row wrap;
+        transform: translateY(-35rem);
+    }
+
+    .homePage h2 {
+        padding: 4px 8px;
+        font-size: 2rem;
+    }
+
+    .homePage .titleName {
+        font-size: 3.5rem;
+    }
+
+    .homePage .Logo {
+        width: 50%;
+        margin: 0px;
+        padding: 0px;
+        min-width: 250px;
+    }
+
+    .topDivider {
+        margin-top: -20%;
+    }
+}

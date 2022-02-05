@@ -1,0 +1,96 @@
+.packages {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: row wrap;
+}
+
+.package {
+    background-color: var(--bglight);
+    padding: 32px;
+    margin: 32px;
+    width: 300px;
+    box-shadow: 2px 2px 2px var(--shadows);
+    border-radius: 0px 0px 25px 25px;
+    transition: .5s ease;
+    text-align: center;
+    font-size: 1.2rem;
+    word-spacing: 0.2rem;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+}
+
+.package:hover {
+    transform: translateY(-0.5rem);
+    background-color: var(--bglightest);
+    transform: scale(110%);
+}
+
+.bronzePackage {
+    border-top: 8px solid #313654;
+}
+
+.silverPackage {
+    border-top: 8px solid #577c8c;
+}
+
+.goldPackage {
+    border-top: 8px solid #7da2aa;
+}
+
+.package .packageIncludes {
+    background-color: var(--mainmed);
+    padding: 6px 12px;
+    border-radius: 5px;
+    margin: 18px 6px;
+}
+
+.packageIncludes ul {
+    list-style: none;
+    margin: 0;
+    padding: 10px;
+}
+
+.packageIncludes li {
+    line-height: 1.7rem;
+}
+
+.packageIncludes p {
+    color: var(--fontsecondary);
+    padding: 0px;
+    margin: 2px;
+}
+
+.package abbr {
+    text-decoration: none;
+    color: #577c8c;
+    transition: .2s ease;
+}
+
+.package abbr:hover {
+    color: var(--fontprimary);
+    cursor: help;
+}
+
+.package button {
+    padding: 16px 32px;
+    background-color:#577c8c;
+    font-family: 'Lato', sans-serif;
+    border-radius: 15px;
+    border: none;
+    font-size: 1.2rem;
+    color: #fff;
+    font-weight: 300;
+}
+
+.package button:hover {
+    background-color: #7ba4aa
+}
+
+.package button:active {
+    background-color: #313654;
+}
+
+.costsIcon {
+    font-size: 5rem;
+}

@@ -112,7 +112,7 @@ const Dropdown = () => {
                                 Go Back
                             </div>
                         </div>
-                        <a href="https://www.linkedin.com/in/tabitha-r-a27827214/" target="_blank">
+                        <a href="https://www.linkedin.com/in/tabitha-r-a27827214/" target="_blank" rel="noreferrer">
                             <div className="menuItem">
                                 <FontAwesomeIcon icon={faLinkedin} className="dropdownIcon" />
                                     <div className='dropdownItemName'>
@@ -121,7 +121,7 @@ const Dropdown = () => {
                                 <FontAwesomeIcon icon={faArrowUpRightFromSquare} className="iconRight" />
                             </div>
                         </a>
-                        <a href="https://github.com/tabitha-r" target="_blank">
+                        <a href="https://github.com/tabitha-r" target="_blank" rel="noreferrer">
                             <div className="menuItem">
                                 <FontAwesomeIcon icon={faGithub} className="dropdownIcon" />
                                     <div className='dropdownItemName'>

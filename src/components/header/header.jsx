@@ -40,7 +40,7 @@ export const BrowserHeader = () => {
                 <FontAwesomeIcon icon={faHouseChimney} fixedWidth />
             </button>
             <div className="fauxUrlBar">
-                <h1>Tabitha Riley Digital</h1>
+                <h1>Tabitha Riley .digital</h1>
                 {page ? <p>|</p> : <span></span>}
                 <h2>{page}</h2>
             </div>

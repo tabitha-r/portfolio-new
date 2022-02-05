@@ -1,0 +1,57 @@
+.examplesScroller {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-flow: row wrap;
+}
+
+.exampleCard {
+    width: 300px;
+    height: auto;
+    background-color: var(--bgdark);
+    padding: 0 0 14px 0;
+    box-shadow: 2px 2px 2px var(--shadows);
+    border-radius: 0px 0px 25px 25px;
+    margin: 24px;
+    transition: .3s ease;
+}
+
+.exampleCard:hover {
+    transform: scale(110%);
+}
+
+.exampleCard img {
+    width: 100%;
+    border-bottom: 8px solid #6f3857;
+}
+
+.exampleCard div {
+    padding: 6px;
+    font-size: 1.3rem;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.exampleCard h4 {
+    margin: 8px 16px;
+    align-self: flex-start;
+}
+
+.exampleCard .icon {
+    margin: 0px 8px;
+    transform: translateY(0.1rem);
+}
+
+.exampleCard a {
+    color: var(--contrastpink);
+    transition: .2s ease;
+    align-self: flex-end;
+    font-size: 1.1rem;
+    margin: 4px;
+}
+
+.exampleCard a:hover {
+    color: #e5b4b7;
+}

@@ -57,75 +57,7 @@ p {
   font-family: 'Lato', sans-serif;
 }
 
-/* Home Page */
-.homePage p {
-  font-family: 'Lato', serif;
-  margin: 10px;
-}
 
-.homePage {
-  background-image: url('./images/ales-nesetril-Im7lZjxeLhg-unsplash.jpg');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
-
-.homePage .Logo {
-  filter: invert(100%) sepia(2%) saturate(2%) hue-rotate(297deg) brightness(105%) contrast(100%);
-  padding: 32px;
-  width: 20%;
-}
-
-.homePage h3 {
-  color: #999;
-  font-size: 5rem;
-  font-family: 'Lato', sans-serif;
-  font-weight: 400;
-}
-
-.titleName {
-  font-weight: 600;
-  color: #fff;
-}
-
-.homeCta {
-  background-color: #fff;
-  border-top: 6px solid #D93D04;
-  padding: 8px 32px;
-  max-width: 25%;
-  margin: 0px 5% 4% auto;
-  border-radius: 0px 0px 50px 50px;
-  font-size: 1.2rem;
-}
-
-.homePage main {
-  display: flex;
-  align-items: top;
-}
-
-.homePage button {
-  background-color: #04ADBF;
-  color: #fff;
-  border: none;
-  padding: 10px 32px;
-  font-size: 1.2rem;
-  margin: 16px;
-  border-radius: 15px;
-  transition: all .1s ease-in-out;
-}
-
-.homePage button:hover {
-  background-color: #03808d;
-}
-
-.homePage button:active {
-  background-color: #03808d;
-  transform: translateY(1px);
-}
-
-.ctaIcon {
-  padding: 0px 5px;
-}
 
 
 
@@ -168,6 +100,7 @@ p {
   .Screen {
     margin: 0px;
     border: none;
+    height: 100vh;
   }
 
   .App {
