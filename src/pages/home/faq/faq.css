@@ -1,16 +1,81 @@
 .faqBox {
     background-color: var(--maindark);
-    padding: 16px 32px;
-    margin: 64px auto;
+    padding: 20px;
+    margin: 48px;
     border-radius: 15px;
+    overflow: hidden;
+    width: 350px;
+    height: 500px;
+    text-align: left;
+    box-shadow: 2px 2px 2px var(--shadows);
+
+    transition: .3s ease;
+}
+
+.faqBox h3 {
+    padding: 0px 32px;
+}
+
+.faqs {
     display: flex;
     flex-flow: row nowrap;
-    justify-content: center;
-    align-items: flex-start;
-    transition: .3s ease;
-    overflow: hidden;
-    min-width: 300px;
-    text-align: left;
+    margin: 0px;
+    padding: 0px;
+    width: 310px;
+}
+
+.faq-icon {
+    display: inline;
+    padding: 0px 16px 0px 0px;
+    font-size: 28px;
+}
+
+.icon-right {
+    color: var(--fontsecondary);
+    margin-left: auto;
+}
+
+.faq-menu-item {
+    padding: 16px;
+    transition: .2s ease;
+    border-radius: 15px;
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.faq-response {
+    width: 300px;
+    font-size: 1.1rem;
+}
+
+.faq-response h4 {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.faq-response a {
+    font-size: 1.1rem;
+    color: var(--contrastpink);
+    transition: .2s ease;
+}
+
+.faq-response a:hover {
+    color: var(--mainlight);
+    cursor: pointer;
+}
+
+.faq-menu-item:hover {
+    background-color: var(--mainmedlight);
+}
+
+.faq-menu {
+    padding: 16px;
+    margin: 0px;
 }
 
 .faq-menu-primary-enter {
@@ -28,10 +93,10 @@
     transform: translateX(110%);
 }
 .faq-menu-secondary-enter-active {
-    transform: translate(0%);
+    transform: translate(-72%);
     transition: all 300ms ease;
 }
 .faq-menu-secondary-exit-active {
-    transform: translate(-110%);
+    transform: translate(110%);
     transition: all 300ms ease;
 }

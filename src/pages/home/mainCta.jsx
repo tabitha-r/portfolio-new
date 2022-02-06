@@ -8,7 +8,7 @@ const MainCta = () => {
 
     return (
         <div className="bigCta">
-            <h3>Want to stand out on the web?</h3>
+            <h3>Want to stand out online?</h3>
             <Link to="/contact">
                 <button>
                     <FontAwesomeIcon 
