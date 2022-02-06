@@ -21,6 +21,7 @@ const Packages = () => {
                     <ul>
                         <li><abbr title="HyperText Markup Language">HTML</abbr>/<abbr title="Cascading Style Sheets">CSS</abbr> Based Site</li>
                         <li>Up to 3 revisions</li>
+                        <li>Update Discounts</li>
                         <li><abbr title="Search Engine Optimization">SEO</abbr> & <abbr title="Web Content Accessibility Guidelines">WCAG</abbr> Compliance</li>
                     </ul>
                 </div>
@@ -41,6 +42,7 @@ const Packages = () => {
                     <ul>
                         <li>React Based Site</li>
                         <li>Up to 5 revisions</li>
+                        <li>Update Discounts</li>
                         <li><abbr title="Search Engine Optimization">SEO</abbr> & <abbr title="Web Content Accessibility Guidelines">WCAG</abbr> Compliance</li>
                     </ul>
                 </div>
@@ -61,6 +63,7 @@ const Packages = () => {
                     <ul>
                         <li>Frontity Based Site</li>
                         <li>Up to 8 revisions</li>
+                        <li>Update Discounts</li>
                         <li><abbr title="Search Engine Optimization">SEO</abbr> & <abbr title="Web Content Accessibility Guidelines">WCAG</abbr> Compliance</li>
                     </ul>
                 </div>

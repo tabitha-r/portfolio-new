@@ -8,14 +8,14 @@ const MainCta = () => {
 
     return (
         <div className="bigCta">
-            <h3>Want to stand out online?</h3>
+            <h3>You only have to ask.</h3>
             <Link to="/contact">
                 <button>
                     <FontAwesomeIcon 
                         icon={faThumbsUp} 
                         className="icon"
                     />
-                    <span>Get Started</span>
+                    <span>Make Me A Site</span>
                 </button>
             </Link>
         </div>

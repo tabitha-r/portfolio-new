@@ -1,5 +1,5 @@
 /** @jsxImportSource @emotion/react */
-import React, { useState, useRef } from 'react';
+import React, { useState } from 'react';
 import './faq.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowRight, faArrowLeft, faCircleQuestion, faMoneyBillWave, faFaceSmile, faGraduationCap, faCrystalBall, faClock, faLocationDot, faArrowUpRightFromSquare } from '@fortawesome/pro-solid-svg-icons';
@@ -278,6 +278,7 @@ const Faq = () => {
                                 />
                             </h4>
                             <p>I self-taught myself how to code since my early teens, with the odd little bit of HTML and CSS. I started studying Full-Stack Engineering in earnest in late-2021 through <a href="https://www.codecademy.com/" target="_blank" rel="noreferrer">Codecademy <FontAwesomeIcon icon={faArrowUpRightFromSquare} /></a>.</p>
+                            <p>You can view my coding certificates <a href="https://www.codecademy.com/profiles/Avaine" target="_blank" rel="noreferrer">here <FontAwesomeIcon icon={faArrowUpRightFromSquare} /></a>.</p>
                             <p>I did go to the Arts University Bournemouth and have a First Class Honours Degree in Acting.</p>
                         </div>
                     </div>

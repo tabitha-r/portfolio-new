@@ -60,12 +60,11 @@ export const HomePage = () => {
                 </FadeInSection>
             </section>
             <section className="faqSection">
-                <FadeInSection>
                     <Faq />
-                </FadeInSection>
             </section>
             <section className="finalCta">
                 <FadeInSection>
+
                     <button>yes</button>
                 </FadeInSection>
             </section>
