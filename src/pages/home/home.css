@@ -95,6 +95,7 @@
 .ctaSection {
     background-color: var(--contrastmain);
     height: auto;
+    width: 100%;
     padding: 64px 0px;
     display: flex;
     align-items: center;

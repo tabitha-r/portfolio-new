@@ -10,14 +10,17 @@ import { Link } from 'react-router-dom';
 const Faq = () => {
     const [faqMenu, setFaqMenu] = useState('main');
     const [faqMenuHeight, setFaqMenuHeight] = useState('550px');
+    const windowWidth = window.innerWidth;
 
     const calcFaqHeight = () => {
-        if (faqMenu === 'main') {
+        if (faqMenu === 'main'  && windowWidth > 515) {
             setFaqMenuHeight('550px');
-        } else if (faqMenu === 'q2') {
+        } else if (faqMenu === 'q2' && windowWidth > 515) {
             setFaqMenuHeight('650px')
-        } else if (faqMenu === 'q5') {
+        } else if (faqMenu === 'q5' && windowWidth > 515) {
             setFaqMenuHeight('670px')
+        } else if (windowWidth < 515) {
+            setFaqMenuHeight('auto')
         } else {
             setFaqMenuHeight('470px')
         }

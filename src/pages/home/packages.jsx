@@ -14,15 +14,13 @@ const Packages = () => {
                     className="costsIcon"
                 />
                 <h4>Simple & Straightforward</h4>
-                <p>A simple single or multiple page site, built using classic <abbr title="HyperText Markup Language">HTML</abbr> and <abbr title="Cascading Style Sheets">CSS</abbr>.</p>
-                <p>Good for portfolio sites and sites without regular updates.</p>
+                <p>A simple single or multiple page site, built using classic building blocks of the web.</p>
+                <p>Good for CV or portfolio sites and sites without regular updates.</p>
                 <div className="packageIncludes">
                     <p>Includes</p>
                     <ul>
                         <li><abbr title="HyperText Markup Language">HTML</abbr>/<abbr title="Cascading Style Sheets">CSS</abbr>/<abbr title="JavaScript">JS</abbr> Based Site</li>
                         <li>Up to 3 revisions</li>
-                        <li>Design Consultation</li>
-                        <li>Update Discounts</li>
                         <li>Lifetime Fixes</li>
                         <li><abbr title="Search Engine Optimization">SEO</abbr> & <abbr title="Web Content Accessibility Guidelines">WCAG</abbr> Compliance</li>
                     </ul>
@@ -44,8 +42,6 @@ const Packages = () => {
                     <ul>
                         <li>React Based Site</li>
                         <li>Up to 5 revisions</li>
-                        <li>Design Consultation</li>
-                        <li>Update Discounts</li>
                         <li>Lifetime Fixes</li>
                         <li><abbr title="Search Engine Optimization">SEO</abbr> & <abbr title="Web Content Accessibility Guidelines">WCAG</abbr> Compliance</li>
                     </ul>
@@ -67,8 +63,6 @@ const Packages = () => {
                     <ul>
                         <li>Frontity Based Site</li>
                         <li>Up to 8 revisions</li>
-                        <li>Design Consultation</li>
-                        <li>Update Discounts</li>
                         <li>Lifetime Fixes</li>
                         <li><abbr title="Search Engine Optimization">SEO</abbr> & <abbr title="Web Content Accessibility Guidelines">WCAG</abbr> Compliance</li>
                     </ul>

@@ -1,3 +1,16 @@
+.ctaContainer {
+    text-align: left;
+    width: 100%;
+}
+
+p.customerProblem {
+    font-size: 2rem;
+    font-weight: 300;
+    width: 80%;
+    max-width: 800px;
+    margin: 2rem auto 2rem 11.5%;
+}
+
 .bigCta {
     text-align: left;
     margin: 0px 10%;
@@ -11,7 +24,7 @@
     margin: 0 4% 0 0;
     padding: 0;
     padding-left: 32px;
-    width: 45%;
+    width: 50%;
     min-width: 400px;
     color: #fff;
     font-size: 5rem;
