@@ -49,7 +49,7 @@
 }
 
 .profileImg {
-    transform: translateY(1.9rem) translateX(-9rem);
+    transform: translate(-7rem, 4rem);
 }
 
 /* TopBar */
@@ -105,6 +105,13 @@
 .homePage .servicesSection {
     background-color: #6f3857;
     height: auto;
+}
+
+.servicesSection h3 {
+    font-size: 3rem;
+    font-family: 'Lato', sans-serif;
+    margin: 0px;
+    color: #fff;
 }
 
 /* Portfolio Section */

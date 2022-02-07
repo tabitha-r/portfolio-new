@@ -15,7 +15,7 @@ const MainCta = () => {
                         icon={faThumbsUp} 
                         className="icon"
                     />
-                    <span>Make Me A Site</span>
+                    <span>Contact Now</span>
                 </button>
             </Link>
         </div>

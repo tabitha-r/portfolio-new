@@ -15,15 +15,15 @@ const Dropdown = () => {
     const darkMode = useSelector(selectDarkMode);
 
     const [activeMenu, setActiveMenu] = useState('main'); // socials, legals
-    const [menuHeight, setMenuHeight] = useState('290px');
+    const [menuHeight, setMenuHeight] = useState('300px');
 
     const calcHeight = () => {
         if (activeMenu === 'main') {
-            setMenuHeight('290px');
+            setMenuHeight('300px');
         } else if (activeMenu === 'socials' ) {
             setMenuHeight('230px')
         } else if (activeMenu === 'legals') {
-            setMenuHeight('370px')
+            setMenuHeight('375px')
         }
     }
 

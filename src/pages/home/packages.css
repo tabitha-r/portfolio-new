@@ -9,7 +9,7 @@
     background-color: var(--bglight);
     padding: 32px;
     margin: 32px;
-    width: 300px;
+    width: 340px;
     box-shadow: 2px 2px 2px var(--shadows);
     border-radius: 0px 0px 25px 25px;
     transition: .5s ease;
@@ -17,7 +17,7 @@
     font-size: 1.2rem;
     word-spacing: 0.2rem;
     font-family: 'Lato', sans-serif;
-    font-weight: 300;
+    font-weight: 400;
 }
 
 .package:hover {
@@ -53,6 +53,9 @@
 
 .packageIncludes li {
     line-height: 1.7rem;
+    font-family: 'Lato', sans-serif;
+    letter-spacing: 0.1rem;
+    font-size: 1rem;
 }
 
 .packageIncludes p {
@@ -93,4 +96,9 @@
 
 .costsIcon {
     font-size: 5rem;
+}
+
+.package h4 {
+    font-size: 1.4rem;
+    margin: 32px 8px;
 }

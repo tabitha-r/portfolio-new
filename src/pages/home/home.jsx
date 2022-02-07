@@ -48,6 +48,7 @@ export const HomePage = () => {
             </section>
             <div className="topDivider"></div>
             <section className="servicesSection">
+                <h3>A Process That Works With You</h3>
                 <FadeInSection>
                     <Packages />
                 </FadeInSection>

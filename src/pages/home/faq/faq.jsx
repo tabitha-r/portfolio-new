@@ -9,17 +9,17 @@ import { Link } from 'react-router-dom';
 
 const Faq = () => {
     const [faqMenu, setFaqMenu] = useState('main');
-    const [faqMenuHeight, setFaqMenuHeight] = useState('500px');
+    const [faqMenuHeight, setFaqMenuHeight] = useState('550px');
 
     const calcFaqHeight = () => {
         if (faqMenu === 'main') {
-            setFaqMenuHeight('500px');
+            setFaqMenuHeight('550px');
         } else if (faqMenu === 'q2') {
-            setFaqMenuHeight('600px')
+            setFaqMenuHeight('650px')
         } else if (faqMenu === 'q5') {
-            setFaqMenuHeight('500px')
+            setFaqMenuHeight('670px')
         } else {
-            setFaqMenuHeight('400px')
+            setFaqMenuHeight('470px')
         }
     }
 
@@ -279,7 +279,7 @@ const Faq = () => {
                             </h4>
                             <p>I self-taught myself how to code since my early teens, with the odd little bit of HTML and CSS. I started studying Full-Stack Engineering in earnest in late-2021 through <a href="https://www.codecademy.com/" target="_blank" rel="noreferrer">Codecademy <FontAwesomeIcon icon={faArrowUpRightFromSquare} /></a>.</p>
                             <p>You can view my coding certificates <a href="https://www.codecademy.com/profiles/Avaine" target="_blank" rel="noreferrer">here <FontAwesomeIcon icon={faArrowUpRightFromSquare} /></a>.</p>
-                            <p>I did go to the Arts University Bournemouth and have a First Class Honours Degree in Acting.</p>
+                            <p>I did go to the Arts University Bournemouth and have a First Class Honours Degree in Acting. I made multiple websites as a part of my degree, including an actor's portfolio site and a theatre production marketing/ticket sales site.</p>
                         </div>
                     </div>
                 </CSSTransition>

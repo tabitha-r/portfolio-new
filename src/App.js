@@ -36,6 +36,7 @@ function App() {
             --fontsecondary: ${darkMode.darkMode ? '#bababa' : '#565656'};
             --fontcolor: ${darkMode.darkMode ? '#fff' : '#693452'};
             --shadows: ${darkMode.darkMode ? '#121212' : '#b9b9b9'};
+            font-size: 18px;
           }
         `}
       />
