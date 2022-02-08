@@ -34,6 +34,7 @@ function App() {
             --browserlight: ${darkMode.darkMode ? '#565656' : '#e9e9e9'};
             --fontprimary: ${darkMode.darkMode ? '#fff' : '#1f1f1f'};
             --fontsecondary: ${darkMode.darkMode ? '#bababa' : '#565656'};
+            --fonttertiary: ${darkMode.darkMode ? '#f5f5f5' : '#202020'};
             --fontcolor: ${darkMode.darkMode ? '#fff' : '#693452'};
             --shadows: ${darkMode.darkMode ? '#121212' : '#b9b9b9'};
             font-size: 18px;

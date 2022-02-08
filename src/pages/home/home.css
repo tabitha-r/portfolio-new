@@ -144,7 +144,7 @@
 /* Final CTA Section */
 .finalCta {
     width: 100%;
-    height: 80%;
+    height: auto;
     background-color: var(--contrastmain);
     display: flex;
     align-items: center;

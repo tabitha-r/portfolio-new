@@ -37,6 +37,7 @@
 .exampleCard h4 {
     margin: 8px 16px;
     align-self: flex-start;
+    font-weight: 400;
 }
 
 .exampleCard .icon {

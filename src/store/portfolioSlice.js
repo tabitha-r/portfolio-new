@@ -12,6 +12,7 @@ export const portfolioSlice = createSlice({
                 description: 'A standard homepage for a fictional company.',
                 notableFeatures: ['Responsive layout', 'Hamburger menu for mobile'],
                 link: 'http://www.tabithariley.digital/va-homepage/',
+                id: 'vaHompage',
             },
             {
                 name: 'Responsive Club Site',
@@ -21,6 +22,7 @@ export const portfolioSlice = createSlice({
                 description: 'A standard homepage for a fictional company.',
                 notableFeatures: ['Responsive layout', 'Random quote generator'],
                 link: 'http://www.tabithariley.digital/club-site/',
+                id: 'clubSite',
             },
             {
                 name: 'Reddit Client',
@@ -30,6 +32,7 @@ export const portfolioSlice = createSlice({
                 description: 'A standard homepage for a fictional company.',
                 notableFeatures: ['Live data from Reddit through the Reddit API', 'Animated logo on hover', 'Pinnable Subreddits', 'Dark Mode/Light Mode Toggle'],
                 link: 'http://www.tabithariley.digital/lurkit/',
+                id: 'lurkit',
             },
             {
                 name: 'Random Generator',
@@ -39,6 +42,7 @@ export const portfolioSlice = createSlice({
                 description: 'A random Tarot card reading generator.',
                 notableFeatures: ['Randomly generated response', 'Handles user input'],
                 link: 'http://www.tabithariley.digital/tarot/',
+                id: 'tarot',
             },
             {
                 name: 'Portfolio Site',
@@ -48,11 +52,12 @@ export const portfolioSlice = createSlice({
                 description: 'A portfolio site for a designer.',
                 notableFeatures: ['Responsive layout', 'Navigation sliding in and out on hover'],
                 link: '',
+                id: 'portfolio',
             }
         ],
     },
     reducers: {
-
+        
     }
 });
 

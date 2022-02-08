@@ -10,7 +10,7 @@ export const skillsSlice = createSlice({
                 description: 'The base of any web page. It is the coding language that says what is on the page.',
                 icon: 'faHtml5',
                 tags: ['frontend', 'design'],
-                moreInfo: false,
+                level: 9,
             },
             {
                 name: 'CSS',
@@ -18,7 +18,7 @@ export const skillsSlice = createSlice({
                 description: 'It goes hand in hand with HTML. While HTML says what is on the page, CSS controls how it looks.',
                 icon: 'faCss3',
                 tags: ['frontend', 'design'],
-                moreInfo: false,
+                level: 8,
             },
             {
                 name: 'JavaScript',
@@ -26,7 +26,7 @@ export const skillsSlice = createSlice({
                 description: 'HTML can\'t change on its own, but with the help of JavaScript - almost anything is possible.',
                 icon: 'faJsSquare',
                 tags: ['frontend', 'interactivity'],
-                moreInfo: false,
+                level: 7,
             },
             {
                 name: 'Node.js',
@@ -34,7 +34,7 @@ export const skillsSlice = createSlice({
                 description: '',
                 icon: 'faNodeJs',
                 tags: ['development', 'backend'],
-                moreInfo: false,
+                level: 2,
             },
             {
                 name: 'React',
@@ -42,7 +42,7 @@ export const skillsSlice = createSlice({
                 description: 'Combining HTML, CSS, and JavaScript into all you need to make single page applications.',
                 icon: 'faReact',
                 tags: ['frontend', 'design', 'interactivity'],
-                moreInfo: false,
+                level: 8,
             },
             {
                 name: 'PHP',
@@ -50,7 +50,7 @@ export const skillsSlice = createSlice({
                 description: '',
                 icon: 'faPhp',
                 tags: ['frontend', 'design', 'backend', 'interactivity'],
-                moreInfo: false,
+                level: 7,
             },
             {
                 name: 'Git',
@@ -58,7 +58,7 @@ export const skillsSlice = createSlice({
                 description: '',
                 icon: 'faGitAlt',
                 tags: ['development'],
-                moreInfo: false,
+                level: 6,
             },
             {
                 name: 'GitHub',
@@ -66,7 +66,7 @@ export const skillsSlice = createSlice({
                 description: '',
                 icon: 'faGithub',
                 tags: ['development'],
-                moreInfo: false,
+                level: 6,
             },
             {
                 name: 'WordPress.org',
@@ -74,32 +74,30 @@ export const skillsSlice = createSlice({
                 description: '',
                 icon: 'faWordpress',
                 tags: ['frontend', 'design', 'backend', 'cms', 'interactivity'],
-                moreInfo: false,
+                level: 8,
+            },
+            {
+                name: 'Sass',
+                fullName: '',
+                description: '',
+                icon: 'faSass',
+                tags: ['frontend', 'design'],
+                level: 7,
+            },
+            {
+                name: 'Frontity',
+                fullName: '',
+                description: 'A means of creating React sites for Wordpress content.',
+                icon: 'faChevronsRight',
+                tags: ['frontend', 'design', 'backend', 'cms', 'interactivity'],
+                level: 6,
             },
         ],
     },
     reducers: {
-        toggleMoreInfo: (state, action) => {
-            const name = action.payload;
-            state.skills.forEach(skill => {
-                if (skill.name === name) {
-                    skill.moreInfo = !skill.moreInfo;
-                }
-            });
-        },
-        filterSkills: (state, action) => {
-            const filter = action.payload;
-            state.skills.forEach((skill) => {
-                if (skill.tags.include(filter)) {
-                    skill.moreInfo = true;
-                } else {
-                    skill.moreInfo = false;
-                }
-            })
-        },
+        
     }
 });
 
 export const selectSkills = (state) => state.skills;
-export const { toggleMoreInfo, filterSkills } = skillsSlice.actions;
 export default skillsSlice.reducer;

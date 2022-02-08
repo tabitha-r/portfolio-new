@@ -1,17 +1,18 @@
-import React from 'react';
-import { useSelector, useDispatch } from 'react-redux';
-import { selectSkills, toggleMoreInfo } from '../../store/skillsSlice';
+import React, { useState } from 'react';
+import { useSelector } from 'react-redux';
+import { selectSkills } from '../../store/skillsSlice';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faHtml5, faCss3, faJsSquare, faNodeJs, faReact, faPhp, faGitAlt, faGithub, faWordpress } from '@fortawesome/free-brands-svg-icons';
-import { faCode } from '@fortawesome/pro-solid-svg-icons';
+import { faHtml5, faCss3, faJsSquare, faNodeJs, faReact, faPhp, faGitAlt, faGithub, faWordpress, faSass } from '@fortawesome/free-brands-svg-icons';
+import { faCode, faChevronsRight, faCircle } from '@fortawesome/pro-solid-svg-icons';
+import { faCircle as fadCircle } from '@fortawesome/pro-duotone-svg-icons';
 import './skills.css';
-import { ShowMoreInfo } from './moreInfo';
 
 export const DisplaySkills = () => {
     const skills = useSelector(selectSkills);
-    const dispatch = useDispatch();
 
-    const skillIcon = (icon, moreInfo) => {
+    const [open, setOpen] = useState(false);
+
+    const skillIcon = (icon) => {
         switch (icon) {
             case 'faHtml5':
                 return <FontAwesomeIcon className="skillIcon faHtml5" icon={faHtml5} />
@@ -31,26 +32,50 @@ export const DisplaySkills = () => {
                 return <FontAwesomeIcon className="skillIcon faGithub" icon={faGithub} />
             case 'faWordpress':
                 return <FontAwesomeIcon className="skillIcon faWordpress" icon={faWordpress} />
+            case 'faSass':
+                return <FontAwesomeIcon className="skillIcon faSass" icon={faSass} />
+            case 'faChevronsRight':
+                return <FontAwesomeIcon className="skillIcon faChevronsRight" icon={faChevronsRight} />
             default:
                 return <FontAwesomeIcon className="skillIcon faCode" icon={faCode} />
         }
     };
 
-    const handleClick = (name) => {
-        dispatch(toggleMoreInfo(name));
-    };
+    const skillScale = (level) => {
+        const levelArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+        const response = [];
+        levelArray.forEach(levelNo => {
+            if (levelNo <= level) {
+                response.push(<FontAwesomeIcon icon={faCircle} className="levelIndicator" />);
+            } else {
+                response.push(<FontAwesomeIcon icon={fadCircle} className="levelIndicator" />);
+            }
+        });
+        return response;
+    }
 
     return (
         <div className="skills">
-            {skills.skills.map(({ name, fullName, description, icon, tags, moreInfo }) => (
-                <div key={icon}>
-                    <button
-                        className={moreInfo ? "activeInfo skillCard" : "skillCard"}
-                        onClick={() => handleClick(name)}
+            {skills.skills.map(({ name, fullName, description, icon, tags, level }) => (
+                <div 
+                    key={icon}
+                    onClick={() => setOpen(!open)}
+                >
+                    <div 
+                        className="skillCard"
                     >
-                        {skillIcon(icon)}
-                        {moreInfo ? <ShowMoreInfo name={name} fullName={fullName} description={description} /> : <span></span>}
-                    </button>
+                        <div className="skillIcon {icon}">
+                            {skillIcon(icon)}
+                        </div>
+                        <div className="skillScale">
+                            {skillScale(level)}
+                        </div>
+                    </div>
+                    {open &&
+                        <div>
+                            <p>{name}</p>
+                        </div>
+                    }
                 </div>
             ))}
         </div>

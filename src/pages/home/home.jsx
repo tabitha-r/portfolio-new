@@ -7,11 +7,12 @@ import './home.css';
 import { selectDarkMode } from '../../store/darkModeSlice';
 import face from '../../images/Tabitha-Riley.png';
 import FadeInSection from '../../features/fadeIn/fadeIn';
-import PortfolioExamples from './portfolioExamples';
-import Packages from './packages';
-import MainCta from './mainCta';
+import PortfolioExamples from './portfolio/portfolioExamples';
+import Packages from './packages/packages';
+import MainCta from './ctas/mainCta';
 import FloatingIcons from '../../features/floatingIcons/floatingIcons';
 import Faq from './faq/faq';
+import FinalCta from './ctas/finalCta';
 
 export const HomePage = () => {
     const darkMode = useSelector(selectDarkMode);
@@ -65,8 +66,7 @@ export const HomePage = () => {
             </section>
             <section className="finalCta">
                 <FadeInSection>
-
-                    <button>yes</button>
+                    <FinalCta />
                 </FadeInSection>
             </section>
             <footer>

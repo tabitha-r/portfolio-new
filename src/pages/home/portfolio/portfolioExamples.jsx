@@ -1,14 +1,14 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
-import vaHomepage from '../../images/portfolio-examples/va-homepage-desktop.png';
-import clubSite from '../../images/portfolio-examples/club-site-desktop.png';
-import lurkit from '../../images/portfolio-examples/lurkit-desktop.png';
-import tarot from '../../images/portfolio-examples/tarot-desktop.png';
+import vaHomepage from '../../../images/portfolio-examples/va-homepage-desktop.png';
+import clubSite from '../../../images/portfolio-examples/club-site-desktop.png';
+import lurkit from '../../../images/portfolio-examples/lurkit-desktop.png';
+import tarot from '../../../images/portfolio-examples/tarot-desktop.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAnglesRight } from '@fortawesome/pro-solid-svg-icons';
 import { Link } from 'react-router-dom';
 import './portfolioExamples.css';
-import { selectPortfolio } from '../../store/portfolioSlice';
+import { selectPortfolio } from '../../../store/portfolioSlice';
 
 const PortfolioExamples = () => {
     const portfolio = useSelector(selectPortfolio);

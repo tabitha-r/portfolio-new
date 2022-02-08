@@ -1,0 +1,55 @@
+.notFound {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--bgdark);
+}
+
+.notFound div {
+    background: var(--mainmeddark);
+    color: var(--fontprimary);
+    padding: 32px 64px;
+    box-shadow: 2px 2px 2px var(--shadows);
+    border-radius: 15px;
+}
+
+.notFound h3 {
+    font-family: 'Lato', sans-serif;
+    font-size: 1.8rem;
+}
+
+.notFound p {
+    font-size: 1.2rem;
+    margin-bottom: 3rem;
+    line-height: 0.1rem;
+}
+
+.icon {
+    font-size: 2rem;
+    padding: 0.5rem;
+}
+
+.notFound button {
+    padding: 8px 32px;
+    border-radius: 15px;
+    background-color: var(--mainlight);
+    border: none;
+    font-size: 1.3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 16px auto;
+    color: var(--fontprimary);
+    transition: .2s ease;
+}
+
+.notFound button:hover {
+    background-color: var(--mainmedlight);
+}
+
+.notFound button:active {
+    background-color: var(--mainmed);
+    padding: 10px 32px 6px 32px;
+}

@@ -48,7 +48,9 @@
   margin: 0px;
   height: 90%;
   letter-spacing: 1.2px;
+  scrollbar-width: thin;
 }
+
 
 h3 {
   font-family: 'Slabo 13px', serif;

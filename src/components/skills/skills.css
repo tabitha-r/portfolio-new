@@ -4,9 +4,10 @@
     margin: 20px;
     border-radius: 5px;
     color: #333;
-    text-align: center;
-    min-width: 200px;
-    min-height: 150px;
+   width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
 
 .skills {
@@ -23,109 +24,62 @@
 
 .skillIcon {
     font-size: 4rem;
+    transition: color .2s ease;
 }
 
-.skills button {
-    border: none;
-    transition: .2s ease-in-out;
-    box-shadow: 0px 3px 3px #666;
-}
-
-.skills button .faHtml5,
-.skills button .faCss3,
-.skills button .faJsSquare,
-.skills button .faNodeJs,
-.skills button .faReact,
-.skills button .faPhp,
-.skills button .faGitAlt,
-.skills button .faGithub,
-.skills button .faWordpress {
-    transition: all .2s ease-in-out;
-    color: #f0c5a5;
-}
-
-.skills button.activeInfo {
-    width: 450px;
-    height: 150px;
-}
-
-.skills button:hover .faHtml5 {
+.skillIcon .faHtml5:hover {
     color: #e34f26;
 }
 
-.skills .activeInfo .faHtml5 {
-    color: #e34f26;
-    float: left;
-}
-
-.skills button:hover .faCss3 {
+.skillIcon .faCss3:hover {
     color: #264de4;
 }
 
-.skills .activeInfo .faCss3 {
-    color: #264de4;
-    float: left;
-}
-
-.skills button:hover .faJsSquare {
+.skillIcon .faJsSquare:hover {
     color: #f7df1e;
 }
 
-.skills .activeInfo .faJsSquare {
-    color: #f7df1e;
-    float: left;
-}
-
-.skills button:hover .faNodeJs {
+.skillIcon .faNodeJs:hover {
     color: #215732;
 }
 
-.skills .activeInfo .faNodeJs {
-    color: #215732;
-    float: left;
-}
-
-.skills button:hover .faReact {
+.skillIcon .faReact:hover {
     color: #00d8ff;
 }
 
-.skills .activeInfo .faReact {
-    color: #00d8ff;
-    float: left;
-}
-
-.skills button:hover .faPhp {
+.skillIcon .faPhp:hover {
     color: #4f5b93;
 }
 
-.skills .activeInfo .faPhp {
-    color: #4f5b93;
-    float: left;
-}
-
-.skills button:hover .faGitAlt {
+.skillIcon .faGitAlt:hover {
     color: #f34f29;
 }
 
-.skills .activeInfo .faGitAlt {
-    color: #f34f29;
-    float: left;
-}
-
-.skills button:hover .faGithub {
+.skillIcon .faGithub:hover {
     color: #333;
 }
 
-.skills .activeInfo .faGithub {
-    color: #333;
-    float: left;
-}
-
-.skills button:hover .faWordpress {
+.skillIcon .faWordpress:hover {
     color: #21759b;
 }
 
-.skills .activeInfo .faWordpress {
-    color: #21759b;
-    float: left;
+.skillIcon .faSass:hover {
+    color: #c69;
+}
+
+.skillIcon .faChevronsRight:hover {
+    color: #1f38c5;
+}
+
+.skillScale {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
+    padding: 0.8rem;
+}
+
+.levelIndicator {
+    padding: 0.02rem;
+
 }
