@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/portfolio-new/static/css/main.1f64cd9a.css",
+    "main.js": "/portfolio-new/static/js/main.83782c4e.js",
+    "static/media/club-site-desktop.png": "/portfolio-new/static/media/club-site-desktop.0ff876cd9224e900e699.png",
+    "static/media/matt-hoffman-Q0AM87PsYkE-unsplash.jpg": "/portfolio-new/static/media/matt-hoffman-Q0AM87PsYkE-unsplash.cba2e063ebca4486020c.jpg",
+    "static/media/va-homepage-desktop.png": "/portfolio-new/static/media/va-homepage-desktop.39c4d8737d39c455baf8.png",
+    "static/media/club-site-mobile.png": "/portfolio-new/static/media/club-site-mobile.0bf99594952abb09d0ee.png",
+    "static/media/va-homepage-mobile.png": "/portfolio-new/static/media/va-homepage-mobile.27cd7f16e7201d45e1aa.png",
+    "static/media/lurkit-desktop.png": "/portfolio-new/static/media/lurkit-desktop.87c402c7b34e85104598.png",
+    "static/media/Tabitha-Riley.png": "/portfolio-new/static/media/Tabitha-Riley.4782fdbff01cd2529eaa.png",
+    "static/media/tarot-desktop.png": "/portfolio-new/static/media/tarot-desktop.51c711f90add5b77182b.png",
+    "static/media/lurkit-mobile.png": "/portfolio-new/static/media/lurkit-mobile.36e1caa65824563a2ab3.png",
+    "static/media/tarot-mobile.png": "/portfolio-new/static/media/tarot-mobile.4b6a40514f2e6eb3e8a2.png",
+    "static/media/undraw_contact_us_re_4qqt.svg": "/portfolio-new/static/media/undraw_contact_us_re_4qqt.4d81ffe7eeb3f95e14dab1c506e326ea.svg",
+    "static/media/undraw_terms_re_6ak4.svg": "/portfolio-new/static/media/undraw_terms_re_6ak4.aff4809df93bb3e511e002f04f206d91.svg",
+    "static/media/TRDigiLogoSolid.svg": "/portfolio-new/static/media/TRDigiLogoSolid.8762a1b94018d8f20ee2182ea2ef5948.svg",
+    "static/media/layered-waves-haikei.svg": "/portfolio-new/static/media/layered-waves-haikei.ba8e93d24b40862d6316.svg",
+    "static/media/layered-waves-haikei2.svg": "/portfolio-new/static/media/layered-waves-haikei2.067190f374b663518bdf.svg",
+    "index.html": "/portfolio-new/index.html",
+    "main.1f64cd9a.css.map": "/portfolio-new/static/css/main.1f64cd9a.css.map",
+    "main.83782c4e.js.map": "/portfolio-new/static/js/main.83782c4e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1f64cd9a.css",
+    "static/js/main.83782c4e.js"
+  ]
+}
