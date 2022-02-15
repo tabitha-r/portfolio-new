@@ -1,0 +1,44 @@
+.allCerts {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-flow: row wrap;
+}
+
+.certPreview {
+    height: 4rem;
+    width: auto;
+    border: 1px solid #666;
+    transition: .2s ease;
+    z-index: 10;
+    margin: 0.1rem;
+}
+
+.certPreview:hover {
+    transform: scale(500%);
+    cursor: pointer;
+}
+
+.bigCert {
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0,0,0,0.6);
+    z-index: 50;
+}
+
+.certDisplay {
+    height: 90%;
+    width: auto;
+    box-shadow: 5px 5px 5px #666;
+}
+
+.certDisplay:hover {
+    cursor: pointer;
+}

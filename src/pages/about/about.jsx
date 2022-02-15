@@ -5,6 +5,7 @@ import { faCircleUser } from '@fortawesome/pro-solid-svg-icons';
 import './about.css';
 import portrait from '../../images/tabitha-r.jpeg';
 import StudyingIcons from './studying';
+import CertificatesContainer from '../../features/certificates/certificates';
 
 export const About = () => {
 
@@ -33,13 +34,14 @@ export const About = () => {
                                 
                             </div>
                             <div className="photoContainer">
+                                <img src={portrait} alt="Tabitha Riley" />
                             </div>
                         </section>
                     </main>
                     <h4>Certifications</h4>
                     <section className="certificates">
                         <div className="text">
-                            <p>Here be fancy things</p>                              
+                            <CertificatesContainer />                            
                         </div>
                     </section>
                     <h4>Studying</h4>
