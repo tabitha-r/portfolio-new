@@ -70,7 +70,7 @@ export const HomePage = () => {
                 </FadeInSection>
             </section>
             <footer>
-                <p>&#169; Tabitha Riley 2022</p>
+                <p>&#169; Tabitha Riley 2022. All Rights Reserved.</p>
             </footer>
         </div>
     )

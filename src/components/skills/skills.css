@@ -1,74 +1,26 @@
 .skillCard {
-    background-color: #fff;
-    padding: 20px;
-    margin: 20px;
+    background-color: var(--bglight);
+    padding: 1.1rem;
+    margin: 0.4rem 1rem;
     border-radius: 5px;
     color: #333;
-   width: 20%;
     display: flex;
     align-items: center;
     justify-content: space-around;
+    transition: .2s ease;
 }
 
-.skills {
-    background-color: #bd9576;
-    overflow: scroll;
-    margin: 0px;
-    display: flex;
-    flex-flow: row wrap;
-    text-align: center;
-    justify-content: center;
-    border-top: 4px solid #83cacd;
-    border-bottom: 4px solid #83cacd;
+.skillCard:hover {
+    cursor: pointer;
+    transform: scale(105%);
 }
 
-.skillIcon {
-    font-size: 4rem;
-    transition: color .2s ease;
-}
-
-.skillIcon .faHtml5:hover {
-    color: #e34f26;
-}
-
-.skillIcon .faCss3:hover {
-    color: #264de4;
-}
-
-.skillIcon .faJsSquare:hover {
-    color: #f7df1e;
-}
-
-.skillIcon .faNodeJs:hover {
-    color: #215732;
-}
-
-.skillIcon .faReact:hover {
-    color: #00d8ff;
-}
-
-.skillIcon .faPhp:hover {
-    color: #4f5b93;
-}
-
-.skillIcon .faGitAlt:hover {
-    color: #f34f29;
-}
-
-.skillIcon .faGithub:hover {
-    color: #333;
-}
-
-.skillIcon .faWordpress:hover {
-    color: #21759b;
-}
-
-.skillIcon .faSass:hover {
-    color: #c69;
-}
-
-.skillIcon .faChevronsRight:hover {
-    color: #1f38c5;
+.skillCard h5 {
+    font-size: 1.2rem;
+    margin: 0 auto 0 1rem;
+    line-height: 0.5rem;
+    font-weight: 400;
+    color: var(--fontprimary);
 }
 
 .skillScale {
@@ -76,10 +28,26 @@
     flex-flow: row nowrap;
     align-items: center;
     justify-content: center;
-    padding: 0.8rem;
+    color: var(--fontsecondary);
+}
+
+p.skillScale {
+    line-height: 0;
+    font-size: 1rem;
+    margin: 0.8rem 0 0 1rem;
 }
 
 .levelIndicator {
     padding: 0.02rem;
 
+}
+
+.skillCard .devIcon {
+    width: 3rem;
+    height: auto;
+    margin: 0;
+}
+
+.skillCard .devIcon:hover {
+    cursor: pointer;
 }

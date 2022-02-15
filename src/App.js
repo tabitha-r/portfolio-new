@@ -16,6 +16,7 @@ function App() {
         styles={css`
           :root {
             --svgbrightness: ${darkMode.darkMode ? '15%' : '85%'};
+            --iconbrightness: ${darkMode.darkMode ? 'brightness(0) invert(1)' : 'brightness(0)' };
             --bgdarkest: ${darkMode.darkMode ? '#1f1f1f' : '#e9e9e9'};
             --bgdark: ${darkMode.darkMode ? '#222222' : '#f9f9f9'};
             --bglight:  ${darkMode.darkMode ? '#252525' : '#fcfcfc'};
