@@ -15,9 +15,9 @@ const FinalCta = () => {
                             icon={faCheck} 
                             className="bullet"
                         />
-                        Your Unique Theme
+                        Your Unique Style
                         <br />
-                        <span>No risks of using the same theme as someone else</span>
+                        <span>No risks of using the same theme or template as someone else</span>
                     </li>
                     <li>
                         <FontAwesomeIcon 

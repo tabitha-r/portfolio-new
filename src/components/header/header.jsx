@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAngleLeft, faAngleRight, faArrowRotateRight, faHouseChimney, faEllipsis } from '@fortawesome/pro-solid-svg-icons';
 import { useLocation, useNavigate } from 'react-router-dom';
 import Dropdown from '../../features/dropdown/dropdown';
+import OutsideAlerter from '../../features/utility/outsideAlerter';
 
 export const BrowserHeader = () => {
     const location = useLocation();
@@ -44,14 +45,16 @@ export const BrowserHeader = () => {
                 {page ? <p>|</p> : <span></span>}
                 <h2>{page}</h2>
             </div>
-            <button 
-                className="browserControlButton"
-                onClick={() => setOpen(!open)}
-            >
-                <FontAwesomeIcon icon={faEllipsis} fixedWidth />
-            </button>
-            <br />
-            {open && <Dropdown />}
+            <OutsideAlerter setOpen={setOpen}>
+                <button 
+                    className="browserControlButton"
+                    onClick={() => setOpen(!open)}
+                >
+                    <FontAwesomeIcon icon={faEllipsis} fixedWidth />
+                </button>
+                <br />
+                {open && <Dropdown />}
+            </OutsideAlerter>
         </header>
     )
 }

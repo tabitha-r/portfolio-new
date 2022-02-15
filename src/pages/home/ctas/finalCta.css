@@ -29,6 +29,9 @@
     background-color: #fff;
     box-shadow: 3px 6px 0 #577c8c;
     margin: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .finalCtaContainer button .icon {
