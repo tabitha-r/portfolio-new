@@ -27,7 +27,7 @@ export const About = () => {
                         <h3>About</h3>
                         <section className="bio">
                             <div className="text">
-                                <p>Hi, my name is Tabitha and I am a Full-Stack Engineer in training.</p>
+                                <p>Hi, my name is Tabitha and I am a Full-Stack Engineer (in training).</p>
                                 <p>That's just nerd-talk for I make websites.</p>
                                 <p>I've been playing around with making simple websites since my early teens, and I've always enjoyed seeing what websites can (and can't) do! In late 2021, I started studying web development in earnest.</p>
                                 <p>Originally I graduated from the Arts University Bournemouth with a degree in Acting. However, a certain pandemic meant I needed to look into other career avenues. During my degree I had to call on my old website-building skills acting portfolio sites and production marketing/ticket sales sites, and it reminded me how fun websites are to create and how important they are in the modern day.</p>
@@ -41,13 +41,15 @@ export const About = () => {
                     <h4>Certifications</h4>
                     <section className="certificates">
                         <div className="text">
+                            <p className="instruction">Click a certificate to enlarge, and click again to close.</p>
                             <CertificatesContainer />                            
                         </div>
                     </section>
                     <h4>Studying</h4>
                     <section className="studying">
                         <div className="text">
-                            <p>These are the technologies I am currently studying, or plan to study in the near future.</p>     
+                            <p>These are the technologies I am currently studying, or plan to study in the near future.</p>   
+                            <p className="instruction">Click the icon to open a new tab.</p>  
                             <StudyingIcons />                         
                         </div>
                     </section>

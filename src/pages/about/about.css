@@ -37,7 +37,7 @@
   .aboutPage section{
     background-color: var(--bglightest);
     color: var(--fontprimary);
-    margin: 0px 32px 8px 32px;
+    margin: 0px 1.7rem 2rem 1.7rem;
     box-shadow: 1px 3px 3px var(--shadows);
     text-align: left;
     padding: 0px;
@@ -103,6 +103,12 @@
     padding: 0px 16px;
     font-family: 'Flow Circular', sans-serif;
     color: #bd9576;
+    transition: .2s ease;
+  }
+
+  .aboutPage .fauxNav p:hover {
+    color: #61b4b8;
+    cursor: default;
   }
   
   .aboutPage aside {
@@ -110,8 +116,7 @@
     width: max-content;
     height: 100%;
     background-color: #bd9576;
-    margin-left: 0px;
-    margin-right: auto;
+    margin: 0px auto 0px 0px;
     border-right: 4px solid #83cacd;
 }
 
@@ -120,7 +125,9 @@
   flex-flow: column nowrap;
   text-align: flex-start;
   justify-content: flex-start;
-  padding-bottom: 1rem;
+  padding-bottom: 2rem;
+  margin-bottom: 0;
+  height: 100%;
 }
   
   .aboutPage aside .instruction {
@@ -128,14 +135,32 @@
     padding: 0px 16px;
     margin: 5px;
   }
+
+  .aboutPage .instruction {
+    color: var(--fontsecondary);
+    padding: 0px 16px;
+    margin: 5px;
+  }
   
-  .aboutFooter p {
-    font-family: 'Flow Circular', sans-serif;
-    color: #bd9576;
+  footer.aboutFooter {
+    background-color:#745b47;
+    height: 3rem;
+    width: 100%;
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
     justify-content: space-around;
+  }
+
+  .aboutFooter p {
+    font-family: 'Flow Circular', sans-serif;
+    color: #fff;
+    transition: .2s ease;
+  }
+
+  .aboutFooter p:hover {
+    color: #61b4b8;
+    cursor: default;
   }
 
   .blockedOut {
@@ -149,7 +174,7 @@
     overflow-x: scroll;
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: flex-start;
     flex-flow: row wrap;
   }
 
@@ -158,12 +183,13 @@
     height: 4rem;
     transition: .3s ease;
     filter: var(--iconbrightness);
-    margin: 0 0.8rem;
+    margin: 0.8rem;
+    padding: 0;
   }
 
   .devIcon:hover {
     transform: scale(110%);
-    cursor: help;
+    cursor: pointer;
     filter: none;
   }
 
@@ -178,6 +204,8 @@
 
   .aboutPage aside {
     width: 100%;
+    border-right: none;
+    border-top: 4px solid #83cacd;
   }
 
   .aboutPage aside .skills {

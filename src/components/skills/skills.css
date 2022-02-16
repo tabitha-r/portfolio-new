@@ -8,11 +8,13 @@
     align-items: center;
     justify-content: space-around;
     transition: .2s ease;
+    
 }
 
 .skillCard:hover {
     cursor: pointer;
     transform: scale(105%);
+    filter: none;
 }
 
 .skillCard h5 {
@@ -42,12 +44,12 @@ p.skillScale {
 
 }
 
-.skillCard .devIcon {
+.skillCard .skillIcon {
     width: 3rem;
     height: auto;
     margin: 0;
 }
 
-.skillCard .devIcon:hover {
+.skillCard .skillIcon:hover {
     cursor: pointer;
 }

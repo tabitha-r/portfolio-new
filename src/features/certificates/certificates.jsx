@@ -20,6 +20,12 @@ const CertificatesContainer = () => {
             <Certificate src='responsivedesign' name='Responsive Design' />
             <Certificate src='navdesign' name='Navigation Design' />
             <Certificate src='php' name='PHP' />
+            <Certificate src='regex' name='Regular Expressions' />
+            <Certificate src='jstesting' name='JavaScript Unit Testing' />
+            <Certificate src='jsdebug' name='Debugging JavaScript' />
+            <Certificate src='git' name='Git & GitHub' />
+            <Certificate src='commandline' name='Command Line' />
+            <Certificate src='degree' name='Acting Degree' />
         </div>
     )
 }

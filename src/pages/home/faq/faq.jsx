@@ -182,7 +182,7 @@ const Faq = () => {
                                     className="faq-icon icon-right"
                                 />
                             </h4>
-                            <p>It can depend entirely on the project. If you just want a simple one-page site made with HTML and CSS that you already have a design in mind for then it can be coded in less than two-hours.</p>
+                            <p>It can depend entirely on the project. A simple one-page site, made with HTML and CSS, that you already have a design in mind for can be coded in less than three hours.</p>
                             <p>However, if you want a more complex single-page application with numerous components and design work then it can take anywhere between a few working days to multiple weeks.</p>
                             <p>For a better idea, you can <Link to="/contact">drop me an e-mail or give me call</Link>.</p>
                             

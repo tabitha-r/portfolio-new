@@ -16,7 +16,7 @@
 }
 
 .certPreview:hover {
-    transform: scale(500%);
+    transform: scale(110%);
     cursor: pointer;
 }
 
@@ -41,4 +41,39 @@
 
 .certDisplay:hover {
     cursor: pointer;
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: var(--mainlight);
+    color: var(--fonttertiary);
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+    border: solid 2px var(--maindark);
+    
+    transform: translateX(-90%) translateY(120%);
+   
+    position: absolute;
+    z-index: 1;
+
+    transition: .1s ease;
+  }
+  
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+    cursor: pointer;
+  }
+
+@media only screen and (max-width: 1200px) {
+    .certDisplay {
+        width: 90%;
+        height: auto;
+    }
 }

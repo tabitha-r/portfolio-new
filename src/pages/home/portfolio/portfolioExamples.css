@@ -41,8 +41,7 @@
 }
 
 .exampleCard .icon {
-    margin: 0px 8px;
-    transform: translateY(0.1rem);
+    transform: translateY(0.9rem);
 }
 
 .exampleCard a {

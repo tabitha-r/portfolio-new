@@ -1,3 +1,4 @@
+/** @jsxImportSource @emotion/react */
 import React, { useState } from 'react';
 import { useSelector } from 'react-redux';
 import { selectSkills } from '../../store/skillsSlice';
@@ -5,11 +6,12 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCircle } from '@fortawesome/pro-solid-svg-icons';
 import { faCircle as fadCircle } from '@fortawesome/pro-duotone-svg-icons';
 import './skills.css';
+import { css } from '@emotion/react'
 
 export const DisplaySkills = () => {
     const skills = useSelector(selectSkills);
 
-    const [open, setOpen] = useState(false);
+    const [hover, setHover] = useState(false);
 
     const skillScale = (level) => {
         const levelArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
@@ -29,7 +31,8 @@ export const DisplaySkills = () => {
             {skills.skills.map(({ name, id, fullName, icon, tags, level, link }) => (
                 <div 
                     key={id}
-                    onClick={() => setOpen(!open)}
+                    onMouseEnter={() => setHover(true)}
+                    onMouseLeave={() => setHover(false)}
                 >
                     <a 
                         className="skillCard"
@@ -38,9 +41,13 @@ export const DisplaySkills = () => {
                         rel="noreferrer"
                     >
                         <img 
-                            className="devIcon"
+                            className="skillIcon"
                             src={icon}
                             alt={name}
+                            css={css`
+                                filter: ${hover ? 'none' : 'var(--iconbrightness)'};
+                                transition: .5s ease;
+                            `}
                         />
                         <div>
                             <h5>{name}</h5>
