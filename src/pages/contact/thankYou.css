@@ -1,0 +1,63 @@
+.contactPage .thankYou {
+    background-color: #5e8e95;
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Lato', Helvetica, sans-serif;
+}
+
+.contactPage main {
+    border: 3px solid #e7b564;
+    background-color: var(--bgdark);
+    padding: 32px 64px;
+    border-radius: 25px;
+    box-shadow: 2px 2px 2px var(--shadows);
+    color: var(--fontprimary);
+    font-size: 1.2rem;
+    max-width: 450px;
+    width: 60%;
+}
+
+.contactPage h2 {
+    font-family: 'Questrial', sans-serif;
+}
+
+.contactPage main p {
+    font-weight: 300;
+    font-size: 1.5rem;
+}
+
+.mainIcon {
+    font-size: 2rem;
+    color: #e7b564;
+}
+
+.contactPage button {
+    font-size: 1.5rem;
+    padding: 1rem 3rem;
+    border-radius: 25px;
+    border: none;
+    margin: 1.5rem auto;
+    background-color: #e7b564;
+    color: #fff;
+    transition: .2s ease;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    max-width: 90%;
+    font-family: 'Questrial', sans-serif;
+}
+
+.contactPage button:hover {
+    background-color: #bccfc9;
+    color: #5e8e95;
+    cursor: pointer;
+}
+
+.buttonEl {
+    margin: 0 0.4rem;
+}

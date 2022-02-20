@@ -6,10 +6,11 @@ import { About } from './pages/about/about';
 import { Services } from './pages/services';
 import { NotFound } from './pages/notfound/notFound';
 import { HomePage } from './pages/home/home';
-import { Contact } from './pages/contact';
+import { Contact } from './pages/contact/contact';
 import { Legals } from './pages/legals'; 
 import Portfolio from './pages/portfolio/portfolio';
 import ComingSoon from './pages/comingSoon/comingSoon';
+import ThankYou from './pages/contact/thankYou';
 import { store } from './store/store';
 import { Provider } from 'react-redux';
 import { 
@@ -31,6 +32,7 @@ ReactDOM.render(
               <Route path="*" element={<NotFound />} />
               <Route path="contact" element={<Contact />} />
               <Route path="legals" element={<ComingSoon page="Legals" />} />
+              <Route path="contact/thanks" element={<ThankYou />} />
           </Route>
         </Routes>
       </Router>

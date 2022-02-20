@@ -60,35 +60,6 @@ p {
   font-family: 'Lato', sans-serif;
 }
 
-
-
-
-
-/* Contact Page */
-.contactPage {
-  display: flex;
-  margin: 60px;
-  justify-content: space-evenly;
-  align-items: center;
-  padding: 65px 10px;
-  flex-wrap: wrap;
-}
-
-.contactInfo {
-  padding: 30px 0px;
-  background-color: #18BEF5;
-  border-radius: 25px;
-  color: #fff;
-  margin: 40px;
-  max-width: 400px;
-}
-
-.contactInfo .logo {
-  width: 20%;
-  height: 20%;
-  filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(332deg) brightness(108%) contrast(101%);
-}
-
 /* Media Queries */
 @media screen and (max-width: 600px) {
   .Monitor {

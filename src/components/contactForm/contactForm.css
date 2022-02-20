@@ -1,0 +1,72 @@
+.contactForm {
+    background-color: var(--bglight);
+    padding: 32px;
+    margin: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column nowrap;
+    border-radius: 25px;
+    box-shadow: 2px 2px 2px var(--shadows);
+    border: 3px solid #e7b564;
+    color: var(--fontprimary);
+    width: 20rem;
+}
+
+.contactForm p {
+    margin: 0.2rem auto 2rem auto;
+    font-size: 1rem;
+    color: var(--fontsecondary);
+}
+
+.contactForm h3 {
+    font-family: 'Questrial', sans-serif;
+    font-size: 1.5rem;
+    margin-bottom: 0.2rem;
+}
+
+.contactForm .formIcon {
+    color: #5b8f8f;
+    font-size: 2rem;
+    margin: 0.2rem 0.5rem;
+}
+
+.contactForm input,
+.contactForm textArea {
+    font-size: 1.2rem;
+    font-family: 'Lato', Helvetica, sans-serif;
+    padding: 0.5rem 0.8rem;
+    margin-left: 0.5rem;
+    border: none;
+    border-radius: 15px;
+    width: 70%;
+    background-color: var(--mainmedlight);
+    color: var(--fontprimary);
+    transition: .2s ease;
+    border: 2px solid var(--mainmedlight);
+}
+
+.contactForm input:focus,
+.contactForm textarea:focus,
+.contactForm input:hover,
+.contactForm textarea:hover {
+    background-color: var(--mainlight);
+    border: 2px solid #bccfc9;
+}
+
+.contactForm .buttonEl {
+    margin: 0 0.4rem;
+}
+
+.formInput {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0rem auto;
+}
+
+.contactForm form {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
