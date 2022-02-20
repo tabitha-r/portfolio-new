@@ -1,4 +1,132 @@
+.portfolioPage {
+    background-color: var(--bgdark);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    background-image: url('../../images/blob-scatter-haikei.svg');
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
 .imagePreview {
     width: 50px;
     overflow: hidden;
+}
+
+.previewCard {
+    transition: .2s ease;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(23, 35, 46, 0.9);
+    padding: 2rem;
+    width: 25%;
+    margin: 0.6rem 0;
+    color: #fff;
+    border-top: 0.5rem solid var(--bgdark);
+    box-shadow: 2px 2px 2px var(--shadows);
+}
+
+.previewCard:hover {
+    background-color: rgba(23, 35, 46, 1);
+}
+
+.portfolioPreviews {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    flex-flow: row wrap;
+}
+
+.portfolioItemDescription {
+    padding: 1rem;
+    text-align: left;
+    max-width: 95%;
+}
+
+.portfolioPage h2 {
+    position: fixed;
+    margin: 3rem auto;
+    color: var(--fontprimary);
+    font-size: 3rem;
+    font-family: 'Fira Code', monospace;
+    background-color: var(--bgdark);
+    padding: 0.5rem 2rem; 
+    z-index: 10;
+    box-shadow: 2px 2px 2px var(--shadows);
+}
+
+.portfolioPage h3 {
+    font-family: 'Fira Code', monospace;
+    font-weight: 300;
+    background-color: var(--bgdarkest);
+    color: var(--fontprimary);
+    padding: 0.3rem 0.5rem;
+    box-shadow: 2px 2px 2px var(--shadows);
+}
+
+.portfolioControls {
+    position: fixed;
+    top: 8rem;
+    right: 4rem;
+    z-index: 1;
+}
+
+.portfolioControls button {
+    margin: 0.5rem;
+    font-size: 1.4rem;
+    border: none;
+    background-color: var(--bgdarkest);
+    color: var(--fontprimary);
+    padding: 0.4rem;
+    box-shadow: 2px 2px 2px var(--shadows);
+    transition: 0.2s ease;
+}
+
+.portfolioControls button:hover {
+    cursor: pointer;
+    color: #bf781b;
+    background-color: var(--mainmed);
+}
+
+.portfolioControls button:active {
+    box-shadow: none;
+    transform: translateY(3px);
+}
+
+.portfolioPage .cards {
+    margin-top: 15rem;
+}
+
+@media only screen and (max-width: 810px) {
+    .previewCard {
+        padding: 2rem 5%;
+    }
+}
+
+@media only screen and (max-width: 1040px) {
+    .portfolioControls {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 880px) {
+    .portfolioPage h2 {
+        font-size: 2rem;
+    }
+}
+
+@media only screen and (max-width: 660px) {
+    .portfolioPage h2 {
+        font-size: 1.3rem;
+    }
+
+    .portfolioPage .cards {
+        margin-top: 9rem;
+    }
 }

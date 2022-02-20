@@ -29,45 +29,74 @@ const PreviewImage = () => {
         return response;
     };
 
+    const printArray = (arr) => {
+        let result = [];
+        arr.forEach(element => {
+            result.push(<li>{element}</li>)
+        });
+        return result;
+    }
+
     const [orientation, setOrientation] = useState('landscape');
 
 
     return (
-        <>
-            {portfolio.projects.map(({name, desktopPreview, mobilePreview, id}) => (
-                <div key={id}>
-                    <div
-                        css={css`
-                            border: 10px solid #999;
-                            width: ${orientation === 'landscape' ? '500px' : 'auto'};
-                            height: ${orientation === 'landscape' ? 'auto' : '500px'};
-                            aspect-ratio: ${orientation === 'landscape' ? '16 / 9' : '8.5 / 16'};
-                            overflow: hidden;
-                            border-radius: 25px;
-                            padding: 0px;
-                            object-fit: cover;
-                        `}
-                    >
-                        <img
-                            src={orientation === 'landscape' ? imageSource(desktopPreview) : imageSource(mobilePreview)}
-                            css={css`
-                                width: ${orientation === 'landscape' ? '100%' : 'auto'};
-                                height: ${orientation === 'landscape' ? 'auto' : '100%'};
-                            `}
-                            alt="Portfolio Project Preview"
-                        />
+        <div className="cards">
+            <div className="portfolioControls">
+                <button onClick={() => setOrientation('landscape')}>
+                    <FontAwesomeIcon icon={faDesktop} fixedWidth />
+                </button>
+                <button onClick={() => setOrientation('portrait')}>
+                    <FontAwesomeIcon icon={faMobileScreen} fixedWidth />
+                </button>
+            </div>
+            <main className="portfolioPreviews">
+                {portfolio.projects.map(({name, desktopPreview, mobilePreview, tech, description, notableFeatures, link, id, built}) => (
+                    <div key={id} className="previewCard">
+                        <a
+                          href={link}
+                          target="_blank"
+                          rel="noreferrer">
+                            <div
+                                css={css`
+                                    border: 10px solid #999;
+                                    width: ${orientation === 'landscape' ? '350px' : 'auto'};
+                                    height: ${orientation === 'landscape' ? 'auto' : '250px'};
+                                    aspect-ratio: ${orientation === 'landscape' ? '16 / 9' : '8.5 / 16'};
+                                    overflow: hidden;
+                                    border-radius: 25px;
+                                    padding: 0px;
+                                    object-fit: cover;
+                                    box-shadow: 2px 2px 2px var(--shadows);
+                                    transition: .3s ease;
+                                    :hover {
+                                        transform: scale(110%);
+                                    }
+                                `}
+                            >
+                                <img
+                                    src={orientation === 'landscape' ? imageSource(desktopPreview) : imageSource(mobilePreview)}
+                                    css={css`
+                                        width: ${orientation === 'landscape' ? '100%' : 'auto'};
+                                        height: ${orientation === 'landscape' ? 'auto' : '100%'};
+                                    `}
+                                    alt="Portfolio Project Preview"
+                                />
+                            </div>
+                        </a>
+                        <div className="portfolioItemDescription">
+                            <h3>{name}</h3>
+                            <p>{description}</p>
+                            <p>Notable features:</p>
+                            <ul>{printArray(notableFeatures)}</ul>
+                            <p>Built with:</p>
+                            <ul>{printArray(tech)}</ul>
+                            <p>Created {built}</p>
+                        </div>
                     </div>
-                    <div>
-                        <button onClick={() => setOrientation('landscape')}>
-                            <FontAwesomeIcon icon={faDesktop} />
-                        </button>
-                        <button onClick={() => setOrientation('portrait')}>
-                            <FontAwesomeIcon icon={faMobileScreen} />
-                        </button>
-                    </div>
-                </div>
-            ))}
-        </>
+                ))}
+            </main>
+        </div>
         
     )
 }

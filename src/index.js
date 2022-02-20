@@ -28,7 +28,7 @@ ReactDOM.render(
               <Route path="" element={<HomePage />} />
               <Route path="about" element={<About />} />
               <Route path="services" element={<ComingSoon page="Services" />} />
-              <Route path="portfolio" element={<ComingSoon page="Portfolio" />} />
+              <Route path="portfolio" element={<Portfolio page="Portfolio" />} />
               <Route path="*" element={<NotFound />} />
               <Route path="contact" element={<Contact />} />
               <Route path="legals" element={<ComingSoon page="Legals" />} />
