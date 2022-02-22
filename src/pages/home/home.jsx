@@ -34,7 +34,7 @@ export const HomePage = () => {
                     <br />
                     <span className="titleName">Tabitha Riley</span>
                     <br />
-                    Web Developer
+                    and I make websites
                 </h2>
                 <img 
                     src={face}
